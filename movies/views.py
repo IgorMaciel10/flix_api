@@ -12,6 +12,7 @@ class MovieCreateListView(generics.ListCreateAPIView):
       queryset = Movie.objects.all()
       serializer_class = MovieSerializer
 
+
 class MovieRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
       permission_classes = [IsAuthenticated, GlobalDefaultPermission]    
       queryset = Movie.objects.all()
@@ -35,3 +36,4 @@ class MovieStatsView(views.APIView):
                   "average_stars": round(average_stars, 1) if average_stars else 0,
             },
             status=status.HTTP_200_OK)
+      

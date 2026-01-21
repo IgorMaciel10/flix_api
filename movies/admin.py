@@ -11,3 +11,4 @@ class MovieAdmin(admin.ModelAdmin):
             'release_date',
             'resume'
       )
+      

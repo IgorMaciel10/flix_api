@@ -17,13 +17,3 @@ class GenrePermissionclass(permissions.BasePermission):
                   return request.user.has_perm('genres.delete_genre')
             
             return False
-# class BasePermission(metaclass=BasePermissionMetaclass):
-#     """
-#     A base class from which all permission classes should inherit.
-#     """
-
-#     def has_permission(self, request, view):
-#         """
-#         Return `True` if permission is granted, `False` otherwise.
-#         """
-#         return True

@@ -24,3 +24,4 @@ class MovieSerializer(serializers.ModelSerializer):
             if len(value) > 500:
                   raise serializers.ValidationError("Resumo não deve ter mais de 200 caracteres.")
             return value
+      

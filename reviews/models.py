@@ -18,4 +18,5 @@ class Review(models.Model):
       comment = models.TextField(null=True, blank=True)
 
       def __str__(self):
-            return f'{self.stars} stars for {self.movie.title}'
+            return f'{self.stars} stars for {self.movie.title}'    
+        
